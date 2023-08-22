@@ -1,6 +1,6 @@
 let weather={
     fetchWeather(city){
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0238750ca19025ca1a6b5f0e237352a6&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={api-id}&units=metric`)
         .then((response)=>response.json())
         .then((data)=>this.displayWeather(data));
     },
